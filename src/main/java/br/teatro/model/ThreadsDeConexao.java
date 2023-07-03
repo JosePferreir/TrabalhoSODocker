@@ -83,7 +83,7 @@ public class ThreadsDeConexao implements Runnable
                 recurso = recursoNovo[0];
                 recurso += ".html";
             }
-            File f = new File("arquivos_html/" + recurso);
+            File f = new File("/home/trabalho/arquivos_html/" + recurso);
             ByteArrayOutputStream bout = new ByteArrayOutputStream();
             if(!f.exists()){
                 out.write("404 NOT FOUND\n\n".getBytes(StandardCharsets.UTF_8));
