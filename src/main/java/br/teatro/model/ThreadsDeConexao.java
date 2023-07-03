@@ -89,7 +89,7 @@ public class ThreadsDeConexao implements Runnable
                 out.write("404 NOT FOUND\n\n".getBytes(StandardCharsets.UTF_8));
             }
             else{
-                InputStream fileIn = new FileInputStream("arquivos_html/" + recurso);
+                InputStream fileIn = new FileInputStream("/home/trabalho/arquivos_html/" + recurso);
                 //escreve arquivos
                 bout.write(header.getBytes(StandardCharsets.UTF_8));
                 nBytes = fileIn.read(buffer);
